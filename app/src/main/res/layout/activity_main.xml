@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/addButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="수강신청"/>
+        <Button
+            android:id="@+id/scheduleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="시간표"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/fdeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="수강취소"
+            android:textColor="@color/colorWhite" />
+
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="610dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="112dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/logo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="공지사항"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/noticeListView"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_margin="10dp"
+                android:divider="#ffffff"
+                android:dividerHeight="10dp">
+
+            </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/idmanagementButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="회원삭제"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/fcourseaddButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="강의추가"
+                    android:textColor="@color/colorWhite" />
+                <Button
+                    android:id="@+id/coursemanagementButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="강의삭제"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
